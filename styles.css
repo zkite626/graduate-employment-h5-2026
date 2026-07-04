@@ -122,15 +122,16 @@ button {
   left: 0;
   right: 0;
   height: 48px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  display: block;
   padding: max(10px, env(safe-area-inset-top)) 18px 8px;
   color: rgba(13, 30, 50, 0.78);
   pointer-events: none;
 }
 
 .signal-dot {
+  position: absolute;
+  left: 18px;
+  top: calc(max(10px, env(safe-area-inset-top)) + 10px);
   width: 9px;
   height: 9px;
   border-radius: 99px;
@@ -139,16 +140,25 @@ button {
 }
 
 .topbar-title {
-  flex: 1;
+  position: absolute;
+  left: 50%;
+  top: max(10px, env(safe-area-inset-top));
+  width: min(180px, calc(100% - 144px));
+  transform: translateX(-50%);
   text-align: center;
+  line-height: 30px;
   font-size: 12px;
   letter-spacing: 0;
   font-weight: 800;
 }
 
 .page-count {
+  position: absolute;
+  top: max(10px, env(safe-area-inset-top));
+  right: 18px;
   min-width: 54px;
   text-align: right;
+  line-height: 30px;
   font-size: 12px;
   color: var(--muted);
 }
