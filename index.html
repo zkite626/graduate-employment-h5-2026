@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#f7fbff" />
+    <title>我的毕业预演：从准大三开始看见就业</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="./styles.css?v=20260703-polish6" />
+  </head>
+  <body>
+    <main class="phone-shell" aria-label="2026届高校毕业生就业H5作品">
+      <canvas id="ambientCanvas" class="ambient-canvas" aria-hidden="true"></canvas>
+      <div class="grain-layer" aria-hidden="true"></div>
+      <div id="sparkLayer" class="spark-layer" aria-hidden="true"></div>
+      <div class="topbar" aria-hidden="true">
+        <span class="signal-dot"></span>
+        <span class="topbar-title">就业数据终端</span>
+        <span class="page-count"><b id="currentPage">01</b>/12</span>
+      </div>
+      <div class="progress-track" aria-hidden="true">
+        <span id="progressBar"></span>
+      </div>
+
+      <div id="slides" class="slides">
+        <section class="slide cover active" data-theme="cover">
+          <div class="hero-photo">
+            <img src="./assets/hero-student-data.jpg" alt="学生在校园窗口旁查看就业数据" />
+          </div>
+          <div class="cover-glitch" aria-hidden="true">1270万</div>
+          <div class="cover-card">
+            <p class="date-tag">2026年7月 · 大二快结束</p>
+            <h1>我的毕业预演</h1>
+            <p class="lead">还没真正求职，但 1270 万人的毕业季，已经让我开始认真看见就业。</p>
+            <div class="identity-note">
+              <span>身份</span>
+              <strong>9月升大三的学生</strong>
+            </div>
+          </div>
+          <button class="next-btn" type="button" data-next aria-label="下一页">
+            <span>向上滑动</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14m0 0 6-6m-6 6-6-6" /></svg>
+          </button>
+        </section>
+
+        <section class="slide timeline-slide">
+          <p class="section-kicker">时间定位</p>
+          <h2>这是一个准大三的七月</h2>
+          <p class="plain">我不是 2026 届毕业生，也还没有求职经历。这个作品更像一次提前预演：先看见数据，再想清楚自己可以准备什么。</p>
+          <div class="timeline">
+            <article class="time-node now">
+              <span>2026.07</span>
+              <strong>大二结束</strong>
+              <p>开始关注就业数据和学长学姐的选择。</p>
+            </article>
+            <article class="time-node">
+              <span>2026.09</span>
+              <strong>进入大三</strong>
+              <p>把课程作业、项目和技能慢慢整理起来。</p>
+            </article>
+            <article class="time-node">
+              <span>2027</span>
+              <strong>尝试实习</strong>
+              <p>用真实任务检验自己适合什么岗位。</p>
+            </article>
+            <article class="time-node">
+              <span>毕业季</span>
+              <strong>正式选择</strong>
+              <p>找工作、升学、考公或其他方向。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="slide number-slide">
+          <p class="section-kicker">第一个大数字</p>
+          <h2>1270 万人的毕业季</h2>
+          <div class="number-radar" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div class="mega-number">
+            <strong data-count="1270">0</strong><span>万</span>
+          </div>
+          <p class="source-line">教育部预计，2026 届全国普通高校毕业生规模为 1270 万人，同比增加 48 万人。</p>
+          <div class="compare-card">
+            <span>我的理解</span>
+            <p>这不是说每个人都在抢同一个岗位，但它提醒我：大学生就业已经不是临毕业才开始想的事。</p>
+          </div>
+        </section>
+
+        <section class="slide pressure-slide">
+          <p class="section-kicker">压力从哪里来</p>
+          <h2>“就业难”不是一句话</h2>
+          <p class="plain">我以前以为就业压力主要来自人数。看完资料后才发现，真正让人紧张的还有这些细节。</p>
+          <div class="pressure-grid">
+            <button class="flip-card" type="button">
+              <span class="icon">人数</span>
+              <strong>同届规模大</strong>
+              <small>选择多，竞争也更明显。</small>
+            </button>
+            <button class="flip-card" type="button">
+              <span class="icon">经验</span>
+              <strong>岗位要实践</strong>
+              <small>很多岗位不只看课程成绩。</small>
+            </button>
+            <button class="flip-card" type="button">
+              <span class="icon">匹配</span>
+              <strong>专业与岗位</strong>
+              <small>学什么和做什么之间需要翻译。</small>
+            </button>
+            <button class="flip-card" type="button">
+              <span class="icon">信息</span>
+              <strong>机会看不懂</strong>
+              <small>通知很多，但不一定都能被学生理解。</small>
+            </button>
+          </div>
+        </section>
+
+        <section class="slide photo-slide">
+          <div class="photo-panel">
+            <img src="./assets/scene-career-fair.jpg" alt="校园招聘会照片" loading="lazy" />
+          </div>
+          <p class="section-kicker">机会也在增加</p>
+          <h2>招聘活动不是只有“海投”</h2>
+          <div class="stat-row">
+            <article>
+              <strong data-count="11000">0</strong>
+              <span>余场校园招聘</span>
+            </article>
+            <article>
+              <strong data-count="1200">0</strong>
+              <span>万个岗位信息</span>
+            </article>
+          </div>
+          <p class="plain">2026 届春季促就业攻坚行动中，各地各高校预计举办校园招聘活动 1.1 万余场，提供岗位信息超 1200 万个。</p>
+        </section>
+
+        <section class="slide action-slide">
+          <p class="section-kicker">从春招到离校后</p>
+          <h2>就业服务其实是一条线</h2>
+          <div class="route-console" aria-hidden="true">
+            <span>岗位</span>
+            <span>指导</span>
+            <span>帮扶</span>
+          </div>
+          <div class="route">
+            <article>
+              <span>3-5月</span>
+              <strong>春季促就业攻坚</strong>
+              <p>拓岗位、办招聘、做政策宣传。</p>
+            </article>
+            <article>
+              <span>6-8月</span>
+              <strong>百日冲刺</strong>
+              <p>4000余场招聘活动，超500万个岗位信息。</p>
+            </article>
+            <article>
+              <span>7-12月</span>
+              <strong>离校后服务</strong>
+              <p>登记、指导、岗位推荐、培训和权益维护。</p>
+            </article>
+          </div>
+          <p class="plain small">看到这里，我的感受是：机会不是没有，但需要主动去找、去筛选、去理解。</p>
+        </section>
+
+        <section class="slide choice-slide">
+          <p class="section-kicker">做个小选择</p>
+          <h2>如果我是 2026 届毕业生</h2>
+          <p class="plain">点一个你最可能先考虑的方向。</p>
+          <div class="choice-list" id="choiceList">
+            <button type="button" data-message="直接找工作：我会先选3个想了解的岗位，把招聘要求里反复出现的技能记下来。再回头看自己的课程作业、网页作品、视频作品，哪些可以整理成作品集。">直接找工作</button>
+            <button type="button" data-message="考研或考公：这不是临时躲开就业压力，而是要先想清楚自己为什么继续往这条路走。对我来说，最重要的是把复习计划、专业能力和备选方案同时准备起来。">考研或考公</button>
+            <button type="button" data-message="实习转正：我会更看重一次真实项目经历，比如参与页面制作、账号内容、剪辑或数据整理。实习结束后，要能讲清楚自己具体做了什么，而不是只写“参与项目”。">实习转正</button>
+            <button type="button" data-message="基层项目：如果想先积累社会经验，这也是一条可以认真考虑的路。它不一定和专业完全对应，但能训练沟通、执行和解决实际问题的能力。">基层项目</button>
+            <button type="button" data-message="暂时迷茫：迷茫不是失败，可能只是信息还不够。我会先找学长学姐聊一次，再看3个岗位要求，给自己定一个很小的开始，而不是一直停在焦虑里。">暂时迷茫</button>
+          </div>
+          <div class="choice-result" id="choiceResult">选择一个方向，这里会出现更具体的准备提醒。</div>
+        </section>
+
+        <section class="slide now-slide">
+          <p class="section-kicker">回到现在</p>
+          <h2>我才准大三，不需要假装成熟</h2>
+          <p class="quote">“提前准备”不是从现在开始焦虑到崩溃，而是把未来要面对的问题，提前拆成一些可以做到的小动作。</p>
+          <div class="mini-chart" aria-hidden="true">
+            <span style="height: 34%"></span>
+            <span style="height: 52%"></span>
+            <span style="height: 41%"></span>
+            <span style="height: 68%"></span>
+            <span style="height: 76%"></span>
+          </div>
+          <p class="plain small">大二结束的我，还没有 offer，也没有求职经验。但我可以先学会看信息、做作品、理解岗位。</p>
+        </section>
+
+        <section class="slide skill-slide">
+          <p class="section-kicker">数字媒体技术视角</p>
+          <h2>专业能力也能变成求职语言</h2>
+          <div class="skill-wheel" aria-label="新媒体运营能力清单">
+            <button type="button" data-tip="把网页小项目写清楚：主题、工具、交互、手机端效果。">网页制作</button>
+            <button type="button" data-tip="不只说会设计，要能展示海报、页面、动效或视觉统一过程。">视觉设计</button>
+            <button type="button" data-tip="视频剪辑可以写成：节奏、脚本、画面组织和传播效果。">视频剪辑</button>
+            <button type="button" data-tip="把图表做得让同学一眼看懂，就是数据可视化的价值。">数据可视化</button>
+            <button type="button" data-tip="作品集不求很多，但每个作品都要说清楚自己做了什么。">作品整理</button>
+          </div>
+          <p class="skill-result" id="skillResult">点一个能力，看看它怎么写进作品集。</p>
+          <p class="plain">这门课让我意识到：找工作不是只写“会软件”，而是要拿出能被看见的页面、内容、数据和复盘。</p>
+        </section>
+
+        <section class="slide checklist-slide">
+          <div class="photo-panel small-photo">
+            <img src="./assets/scene-desk-plan.jpg" alt="学生整理简历和作品集的桌面" loading="lazy" />
+          </div>
+          <p class="section-kicker">一份简历之前</p>
+          <h2>先做一张准备清单</h2>
+          <div class="check-meter" id="checkMeter" aria-hidden="true"><span id="checkMeterValue">0%</span></div>
+          <div class="checklist" id="checklist">
+            <label><input type="checkbox" /> 整理一次课程作业</label>
+            <label><input type="checkbox" /> 记录一个项目复盘</label>
+            <label><input type="checkbox" /> 了解3个岗位要求</label>
+            <label><input type="checkbox" /> 找一次实习或实践机会</label>
+            <label><input type="checkbox" /> 做一个小作品集</label>
+          </div>
+          <p class="check-result" id="checkResult">已完成 0/5 项</p>
+        </section>
+
+        <section class="slide media-slide">
+          <p class="section-kicker">回到课程</p>
+          <h2>就业信息也需要被“运营”</h2>
+          <p class="plain">如果就业政策只是一份长通知，很多学生可能看过就忘。新媒体运营的价值，是把重要信息转成更容易理解、愿意转发、能促成行动的内容。</p>
+          <div class="message-stack">
+            <article>通知很多 → 提炼重点</article>
+            <article>数据很大 → 做成可视化</article>
+            <article>学生焦虑 → 给出下一步</article>
+          </div>
+          <img class="web-photo" src="./assets/web-library.jpg" alt="学生在图书馆学习的网络照片" loading="lazy" />
+        </section>
+
+        <section class="slide ending-slide">
+          <div class="final-glow" aria-hidden="true">
+            <small>2026届预计</small>
+            <span>1270万</span>
+          </div>
+          <p class="section-kicker">最后</p>
+          <h2>把焦虑变成准备</h2>
+          <p class="final-lead">我现在还没真正求职，但可以先把未来的大问题拆成今天能做的小动作。</p>
+          <ol class="action-list">
+            <li>关注学校就业平台和国家大学生就业服务平台。</li>
+            <li>每月整理一次课程成果，留下可展示的证据。</li>
+            <li>主动问学长学姐：岗位到底看什么。</li>
+            <li>尝试一次实习、项目或账号运营实践。</li>
+            <li>不把就业想成一场突击，而是一段持续准备。</li>
+          </ol>
+          <div class="source-card">
+            <strong>数据来源</strong>
+            <p>教育部、新华社、国家统计局、人力资源社会保障部等公开资料。</p>
+          </div>
+          <button class="restart-btn" type="button" id="restartBtn">再看一遍</button>
+        </section>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
